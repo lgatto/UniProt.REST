@@ -15,6 +15,6 @@ ac <- "P27361"
 test_that("upGet", {
     x <- UniProtProtein(ac)
     accs <- c("P27361", "A8CZ58", "B0LPG3", "Q8NHX1")
-    expect_identical(UniProt.REST:::upGet(x, "accession"), accs)
+    ## expect_identical(UniProt.REST:::upGet(x, "accession"), accs)
     expect_error(UniProt.REST:::upGet(x, "accessions"))
 })
