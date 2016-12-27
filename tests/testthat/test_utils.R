@@ -7,7 +7,7 @@ test_that("upNames", {
     nms0 <- c("accession", "name", "protein", "gene", "organism",
               "reference", "comment", "dbReference",
               "proteinExistence", "keyword", "feature", "evidence",
-              "sequence")    
+              "sequence")
     expect_identical(UniProt.REST:::upNames(x), nms0)
 })
 

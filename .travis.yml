@@ -3,7 +3,8 @@ cache: packages
 sudo: false
 
 r:
-  - bioc-devel
+  - devel
+  - release
 
 after_success:
   - Rscript -e 'library(covr); codecov()'
