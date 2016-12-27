@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/lgatto/UniProt.REST.svg?branch=master)](https://travis-ci.org/lgatto/UniProt.REST)
+[![codecov](https://codecov.io/gh/lgatto/UniProt.REST/branch/master/graph/badge.svg)](https://codecov.io/gh/lgatto/UniProt.REST)
 
 # An R Interface to UniProt REST API
 

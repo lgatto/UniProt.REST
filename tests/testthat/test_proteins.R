@@ -7,6 +7,7 @@ test_that("A sinlge UniProtProtein", {
     x <- UniProtProtein(ac)
     expect_true(validObject(x))
     expect_s4_class(x, "UniProtProtein")
+    expect_null(show(x))
 })
 
 
