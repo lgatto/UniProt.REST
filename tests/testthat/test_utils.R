@@ -2,14 +2,14 @@ context("testing utils")
 
 ac <- "P27361"
 
-test_that("upNames", {
-    x <- UniProtProtein(ac)
-    nms0 <- c("accession", "name", "protein", "gene", "organism",
-              "reference", "comment", "dbReference",
-              "proteinExistence", "keyword", "feature", "evidence",
-              "sequence")
-    expect_identical(UniProt.REST:::upNames(x), nms0)
-})
+## test_that("upNames", {
+##     x <- UniProtProtein(ac)
+##     nms0 <- c("accession", "name", "protein", "gene", "organism",
+##               "reference", "comment", "dbReference",
+##               "proteinExistence", "keyword", "feature", "evidence",
+##               "sequence")
+##     expect_identical(UniProt.REST:::upNames(x), nms0)
+## })
 
 
 ## test_that("upNames", {
