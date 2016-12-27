@@ -28,6 +28,72 @@ Large Scale Studies data mapped to UniProt.
         get /proteins/{dbtype}:{dbid}
             get UniProt entries by uniprot cross reference and its id
 
+
+```r
+library("UniProt.REST")
+```
+
+```
+## 
+## This is 'UniProt.REST' version 0.1.0
+```
+
+```r
+ac <- "P27361"
+acs <- c("P27361", "P38398")
+
+UniProtProtein(ac)
+```
+
+```
+## A Protein retrieved from 'UnitProt.REST'
+##  Available data for P27361:
+##   accession name protein gene organism reference comment dbReference
+##   proteinExistence keyword feature evidence sequence
+```
+
+```r
+UniProtProteins(acs) ## works also as UniProtProtein(ac)
+```
+
+```
+## $entry
+## A Protein retrieved from 'UnitProt.REST'
+##  Available data for P38398:
+##   accession name protein gene organism reference comment dbReference
+##   proteinExistence keyword feature evidence sequence
+## 
+## $entry
+## A Protein retrieved from 'UnitProt.REST'
+##  Available data for P27361:
+##   accession name protein gene organism reference comment dbReference
+##   proteinExistence keyword feature evidence sequence
+```
+
+```r
+UniProtProteinIsoforms(ac)
+```
+
+```
+## $entry
+## A Protein retrieved from 'UnitProt.REST'
+##  Available data for P27361-3:
+##   accession name protein gene organism reference comment dbReference
+##   proteinExistence sequence
+## 
+## $entry
+## A Protein retrieved from 'UnitProt.REST'
+##  Available data for P27361-2:
+##   accession name protein gene organism reference comment dbReference
+##   proteinExistence sequence
+## 
+## $entry
+## A Protein retrieved from 'UnitProt.REST'
+##  Available data for P27361-1:
+##   accession name protein gene organism reference comment dbReference
+##   proteinExistence sequence
+```
+
 ### Variation
 
         get /variation

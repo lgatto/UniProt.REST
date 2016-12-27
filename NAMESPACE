@@ -1,3 +1,9 @@
+import(methods)
 import(utils)
 import(httr)
+import(xml2)
 import(jsonlite)
+
+exportClasses(UniProtProtein)
+
+export(UniProtProtein, UniProtProteins, UniProtProteinIsoforms)

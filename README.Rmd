@@ -28,6 +28,16 @@ Large Scale Studies data mapped to UniProt.
         get /proteins/{dbtype}:{dbid}
             get UniProt entries by uniprot cross reference and its id
 
+```{r}
+library("UniProt.REST")
+ac <- "P27361"
+acs <- c("P27361", "P38398")
+
+UniProtProtein(ac)
+UniProtProteins(acs) ## works also as UniProtProtein(ac)
+UniProtProteinIsoforms(ac)
+```
+
 ### Variation
 
         get /variation
