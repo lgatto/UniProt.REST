@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/lgatto/UniProt.REST.svg?branch=master)](https://travis-ci.org/lgatto/UniProt.REST)
+
 # An R Interface to UniProt REST API
 
 The *UniProt.RES* package is an R interface to UniProt's Proteins REST
