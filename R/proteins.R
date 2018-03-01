@@ -20,12 +20,12 @@ PROTEINURL <- paste0(BASEURL, "proteins/")
 ##' Method to show a \code{UniProtProtein} object.
 ##'
 ##' @param object An instance of class \code{UniProtProtein}.
-##' 
+##'
 ##' @rdname UniProtProtein
 setMethod("show", "UniProtProtein",
           function(object) {
               cat("A Protein retrieved from 'UnitProt.REST'\n")
-              cat(" Available data for ", object@Data[[1]][[1]], ":\n  ", sep = "")
+              cat(" Available data for ", unlist(object@Data[[1]][[1]]), ":\n  ", sep = "")
               cat(paste(strwrap(paste(upNames(object), collapse = " "))),
                   sep = "\n  ")
           })
@@ -43,7 +43,7 @@ setMethod("show", "UniProtProtein",
 ##' @param accession A \code{character} contain one of multiple
 ##'     accession numbers. If more than one are provided, a
 ##'     \code{list} of \code{UniProtProtein} objects is returned.
-##' 
+##'
 ##' @rdname UniProtProtein
 UniProtProtein <- function(accession) {
     ans <- lapply(accession, .queryOneAccession)
@@ -88,9 +88,9 @@ UniProtProteinIsoforms <- function(accession) {
 ##' containing all accession numbers, as opposed to
 ##' \code{UniProtProtein}, that sends one message per accession
 ##' number.
-##' 
+##'
 ##' @param accessions A \code{character} with on or more accession numbers.
-##' 
+##'
 ##' @rdname UniProtProtein
 UniProtProteins <- function(accessions) {
     if (length(accessions) > 1)
