@@ -1,3 +1,9 @@
+**Important** This package is currently unmaintained and hasn't kept
+up with changes in UniProt itself. Please use the
+[`UniProt.ws`](https://bioconductor.org/packages/release/bioc/html/UniProt.ws.html)
+package instead.
+
+
 [![Build Status](https://travis-ci.org/lgatto/UniProt.REST.svg?branch=master)](https://travis-ci.org/lgatto/UniProt.REST)
 [![codecov](https://codecov.io/gh/lgatto/UniProt.REST/branch/master/graph/badge.svg)](https://codecov.io/gh/lgatto/UniProt.REST)
 
